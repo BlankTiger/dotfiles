@@ -1,0 +1,27 @@
+set previewer ~/.config/lf/pv
+set cleaner ~/.config/lf/cls
+set icons true
+set ignorecase true
+
+# define a custom 'open' command
+cmd open $$OPENER $fx
+cmd open-choose $OPENER_CHOOSE="true" $OPENER $fx
+# dedicated keys for file opener actions
+map o open
+map O open-choose
+
+map "'"
+map ','
+map d
+map ',' mark-load
+map R reload
+map dd cut
+map dD delete
+map gh cd ~/
+map gd cd ~/dls/
+map gD cd ~/docs/
+map gp cd ~/proj/
+map gP cd ~/pix/
+map gu cd ~/uni/
+map gs cd ~/uni/sem-5/
+map gc cd ~/.config/
